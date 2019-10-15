@@ -1,6 +1,6 @@
 {
   "name": "ethereum-public-key-to-address",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Convert an Ethereum public key to an address",
   "main": "index.js",
   "bin": {
@@ -42,7 +42,8 @@
     "public",
     "address",
     "converter",
-    "checksum"
+    "checksum",
+    "cli"
   ],
   "devDependencies": {
     "standard": "^12.0.1",

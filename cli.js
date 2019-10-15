@@ -12,12 +12,34 @@ const cli = meow(`
   flags: {}
 })
 
+let publicKey = cli.input[0]
 
-const publicKey = cli.input[0]
+if (process.stdin) {
+  process.stdin.setEncoding('utf8')
+  process.stdin.resume()
+  let content = ''
+  process.stdin.on('data', (buf) => {
+    content += buf.toString()
+  })
+  setTimeout(() => {
+    content = content.trim()
 
-if (!publicKey) {
-  console.log('public key argument is required')
-  process.exit(1)
+    if (content) {
+      publicKey = content
+    }
+
+    run()
+  }, 10)
+} else {
+  run()
 }
 
-console.log(publicKeyToAddress(publicKey))
+function run() {
+  if (!publicKey) {
+    console.log('public key argument is required')
+    process.exit(1)
+  }
+
+  console.log(publicKeyToAddress(publicKey))
+  process.exit(0)
+}

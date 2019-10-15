@@ -37,6 +37,14 @@ $ ethereum_public_key_to_address 04e68acfc0253a10620dff706b0a1b1f1f5833ea3beb3bd
 0x90F8bf6A479f320ead074411a4B0e7944Ea8c9C1
 ```
 
+Piping public key example:
+
+```bash
+$ echo 04e68acfc0253a10620dff706b0a1b1f1f5833ea3beb3bde2250d5f271f3563606672ebc45e0b7ea2e816ecb70ca03137b1c9476eec63d4632e990020b7b6fba39 | ethereum_public_key_to_address
+
+0x90F8bf6A479f320ead074411a4B0e7944Ea8c9C1
+```
+
 ## Test
 
 ```bash
