@@ -7,7 +7,7 @@
 
 ## Demo
 
-[https://lab.miguelmota.com/etherereum-public-key-to-address](https://lab.miguelmota.com/ethereum-public-key-to-address)
+[https://lab.miguelmota.com/ethereum-public-key-to-address](https://lab.miguelmota.com/ethereum-public-key-to-address)
 
 ## Install
 

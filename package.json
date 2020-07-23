@@ -1,6 +1,6 @@
 {
   "name": "ethereum-public-key-to-address",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Convert an Ethereum public key to an address",
   "main": "index.js",
   "bin": {
