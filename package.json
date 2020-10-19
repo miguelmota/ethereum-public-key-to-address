@@ -1,6 +1,6 @@
 {
   "name": "ethereum-public-key-to-address",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Convert an Ethereum public key to an address",
   "main": "index.js",
   "bin": {
@@ -31,9 +31,9 @@
   },
   "dependencies": {
     "ethereum-checksum-address": "0.0.2",
-    "keccak256": "^1.0.0",
+    "keccak": "^3.0.1",
     "meow": "^5.0.0",
-    "secp256k1": "^3.7.1"
+    "secp256k1": "^4.0.2"
   },
   "keywords": [
     "ethereum",
