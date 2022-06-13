@@ -13,7 +13,7 @@ function update(event) {
   if (event) event.preventDefault()
   output.innerHTML = ''
   try {
-    output.innerHTML = publicKeyToAddress(publicKey.value)
+    output.innerHTML = publicKeyToAddress(publicKey.value.trim())
   } catch(err) {
     // noop
   }
